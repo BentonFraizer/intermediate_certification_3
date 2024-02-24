@@ -9,5 +9,6 @@ describe('Login and add deposit', () => {
     cy.get('input[placeholder="amount"]').type(1001);
     cy.get('button[type="submit"]').click();
     cy.get('span').contains('Deposit Successful');
+    cy.get('button').contains('Logout').click();
   });
 });
